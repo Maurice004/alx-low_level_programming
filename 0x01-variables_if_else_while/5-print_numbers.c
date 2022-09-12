@@ -2,7 +2,7 @@
 /**
 *main-prints the number from 0-9
 *return(0)
-*
+(*
 *retuen:0 on success
 */
 int main(void)
