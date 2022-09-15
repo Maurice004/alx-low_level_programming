@@ -9,9 +9,9 @@ int main(void)
 char *bus = "_putchar";
 while (*bus)
 {
-_putchar(bus);
+putchar(bus);
 bus++;
 }
-_putchar("\n");
+putchar("\n");
 return (0);
 }
