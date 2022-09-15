@@ -9,7 +9,7 @@ int main(void)
 char *bus = "_putchar";
 while (*bus)
 {
-_putchar(*bus);
+_putchar(bus);
 bus++;
 }
 _putchar("\n");
