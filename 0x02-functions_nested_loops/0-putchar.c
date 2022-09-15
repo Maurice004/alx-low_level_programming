@@ -6,12 +6,12 @@
 */
 int main(void)
 {
-char bus[10] = "_putchar";
-int i;
-for (i = 0; i < 8; i++)
+char bus = "_putchar";
+while (bus)
 {
-putchar(bus[i]);
+_putchar(bus);
+bus++;
 }
-putchar(10);
+_putchar("\n");
 return (0);
 }
