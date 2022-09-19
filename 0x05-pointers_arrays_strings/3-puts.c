@@ -4,6 +4,7 @@
 * @str: pointer type char
 * Return: Always 0 (Success)
 */
+int main(char *str)
 void _puts(char *str)
 {
 for (; *str != '\0';)
