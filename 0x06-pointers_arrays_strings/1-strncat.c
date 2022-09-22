@@ -1,24 +1,21 @@
-#include <stdlib.h>
 #include "main.h"
+#include <stdio.h>
 /**
-* _strchr - locates a character in a string
-*
-* @s: the string to check
-* @c: the character we're looking for
-*
-* Return: a pointer to the first occurance of the character @c in the string
-* @s. Return NULL if the character isn't found
+* _strncat - concatenates two strings since n.
+* @dest: string to destiny
+* @src: string to source
+* @n: value to n
+* Return: Return a concatenate string
 */
-char *_strchr(char *s, char c)
+char *_strncat(char *dest, char *src, int n)
 {
-while (*s)
+int i = 0, lenghtd = 0;
+while (*(dest + lenghtd) != '\0')
+lenghtd++;
+for (i = 0; i < n && *(src + i) != '\0'; i++)
 {
-if (*s != c)
-s++;
-else
-return (s);
+*(dest + lenghtd) = *(src + i);
+lenghtd++;
 }
-if (c == '\0')
-return (s);
-return (NULL);
+return (dest);
 }
