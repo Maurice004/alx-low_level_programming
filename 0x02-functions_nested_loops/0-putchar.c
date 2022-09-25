@@ -1,17 +1,17 @@
 #include "main.h"
 /**
-*main - function prints text as output
+* main - Entry point
 *
-*Return:return 0
+* Return: Always 0 (Success)
 */
 int main(void)
 {
-char *bus = "_putchar";
-while (*bus)
+char *sh = "Main";
+while (*sh)
 {
-putchar(bus);
-bus++;
+_putchar(*sh);
+sh++;
 }
-putchar("\n");
+_putchar('\n');
 return (0);
 }
